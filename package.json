@@ -6,8 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "ts-node prisma/seed.ts",
     "build": "rimraf dist && npx tsc",
-    "start": "npm run build && node dist/index.ts",
-    "dev": "npm run build && concurrently \"npx tsc -w\" \"nodemon --exec ts-node src/index.ts\""
+    "start": "node dist/index.ts",
+    "dev": "concurrently \"npx tsc -w\" \"nodemon --exec ts-node src/index.ts\""
 
   },
   "keywords": [],
